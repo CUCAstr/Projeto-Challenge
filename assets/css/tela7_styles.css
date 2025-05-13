@@ -7,7 +7,7 @@ body {
     min-height: 100vh; /* Ocupa a altura total da viewport */
 }
 
-/* Wrapper da página para Flexbox */
+
 .page-wrapper {
     display: flex;
     width: 100%;
@@ -16,7 +16,7 @@ body {
 /* Sidebar Esquerda */
 .left-sidebar {
     width: 280px; /* Largura fixa da sidebar */
-    background-color: #453a90; /* Roxo escuro */
+    background: linear-gradient(to bottom, #2EC2FF 8%, #3C7AC7 35%, #4359AD 55%, #483E98 77%);
     color: white;
     padding: 20px;
     display: flex;
@@ -87,14 +87,17 @@ body {
     overflow: hidden;
     margin-bottom: 20px;
 }
-.video-preview img {
-    position: absolute;
+
+.video-preview video { /* Alvo: o elemento <video> dentro de .video-preview */
+    position: absolute; /* Posição absoluta para preencher o contêiner pai */
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 100%; /* Preenche 100% da largura do contêiner */
+    height: 100%; /* Preenche 100% da altura do contêiner */
+    object-fit: cover; /* ESSENCIAL: Faz o vídeo cobrir todo o espaço, cortando as bordas se necessário */
+    object-position: center; /* ESSENCIAL: Centraliza o vídeo dentro do contêiner, mesmo que haja corte */
 }
+
 .camera-icon {
     position: absolute;
     bottom: 8px;
@@ -182,10 +185,9 @@ body {
 }
 
 .main-content-header .header-logo img {
-    width: 80px; /* Ajuste o tamanho do logo builtcode */
-    filter: grayscale(100%) brightness(200%) opacity(0.2); /* Para simular o logo cinza claro */
-}
+    width: 100px; /* Ajuste o tamanho do logo builtcode */
 
+}
 .secure-environment-text {
     font-size: 0.9em;
     color: #888;
