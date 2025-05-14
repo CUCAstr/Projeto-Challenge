@@ -45,27 +45,6 @@ O **Projeto Challenge - LetsSign** é uma solução inovadora para autenticaçã
 
 ---
 
-## Tecnologias Utilizadas
-- **Frontend:** HTML5, CSS3, JavaScript (ES6+), Bootstrap.
-- **Backend:** Integração com APIs de autenticação e blockchain.
-- **Segurança:** Criptografia de ponta a ponta, detecção de deepfakes, algoritmos de aprendizado de máquina.
-- **Armazenamento:** Blockchain para registro imutável de dados críticos.
-
----
-
-## Como Executar o Projeto
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/projeto-challenge.git
-   ```
-2. Navegue até o diretório do projeto:
-   ```bash
-   cd projeto-challenge
-   ```
-3. Abra o arquivo `index.html` em um navegador para iniciar a aplicação.
-
----
-
 ## Contribuições
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests para melhorias no projeto.
 
@@ -73,8 +52,3 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar
 
 ## Licença
 Este projeto está licenciado sob a [GNU GENERAL PUBLIC LICENSE](LICENSE).
-
----
-
-## Contato
-Para dúvidas ou sugestões, entre em contato pelo e-mail: **contato@letssign.com**.
