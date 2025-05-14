@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function () {
 	const registerForm = document.getElementById("registerForm");
 	const passwordInput = document.getElementById("password");
@@ -36,12 +35,13 @@ document.addEventListener("DOMContentLoaded", function () {
 			return;
 		}
 
-		// Aqui você pode enviar os dados para um servidor com fetch/AJAX
-		// Simulação de envio
 		alert("Registro realizado com sucesso!");
 
 		// Limpa o formulário
 		registerForm.reset();
 		passwordHelp.textContent = "";
+
+		// Redireciona para a próxima página
+		window.location.href = 'tela3.html';
 	});
 });
