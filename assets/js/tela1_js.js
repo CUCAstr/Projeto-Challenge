@@ -23,5 +23,14 @@ document.addEventListener("DOMContentLoaded", () => {
       senhaError.textContent = "A senha deve ter pelo menos 6 caracteres.";
       senhaError.style.display = "block";
     }
+    else {
+      e.preventDefault(); // Evita envio do formulário real
+      window.location.href = "tela3.html"; // Redireciona para outra página
+    }
+  });
+
+  // Botão visitante
+  visitanteBtn.addEventListener("click", () => {
+    window.location.href = "tela3.html";
   });
 });
