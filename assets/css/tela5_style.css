@@ -13,6 +13,7 @@ body, html {
 .main-wrapper {
 	height: 100vh;
 	display: flex;
+	padding: 0; /* Ensure no padding */
 }
 
 /* Lado esquerdo com gradiente */

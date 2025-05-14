@@ -11,6 +11,6 @@ document.getElementById('code-form').addEventListener('submit', function (e) {
 		return;
 	}
 	
-	// Exibe mensagem de sucesso (ou prossiga para a próxima etapa)
-	alert('Código autenticado com sucesso!');
+	// Redireciona para a próxima página
+	window.location.href = 'tela7.html';
 });

