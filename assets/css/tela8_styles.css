@@ -275,15 +275,24 @@ body {
     margin-bottom: 150px; /* Adicione ou aumente este valor para mais espaço */
 }
 
-/*
-Se você quiser mais controle sobre o espaçamento interno de cada seção,
-você pode também adicionar um padding no sidebar-content e controlar os gaps com flexbox.
-
-Exemplo (alternativa, se quiser repensar o layout interno do sidebar-content):
-.sidebar-content {
-    width: 100%;
+.signature-button-container {
     display: flex;
-    flex-direction: column;
-    gap: 20px; // Adiciona um espaço de 20px entre os filhos diretos (recording-status e progress-section)
+    justify-content: center;
+    margin-top: 30px;
 }
-*/
+
+.signature-button {
+    background-color: #2EC2FF;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signature-button:hover {
+    background-color: #483E98;
+}
