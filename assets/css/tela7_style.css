@@ -26,10 +26,20 @@ body {
 	color: #333;
 }
 
+.instruction-step p {
+	margin: 0;
+	font-size: 1rem;
+	color: #333;
+}
+
 .instruction-phrase {
-	font-size: 0.9rem;
+	font-size: 1rem;
 	font-style: italic;
 	color: #555;
+	background-color: #f8f9fa;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #ddd;
 }
 
 .check-icon {
@@ -81,4 +91,9 @@ video {
 	align-items: center; /* Alinha verticalmente os elementos */
 	justify-content: center; /* Centraliza horizontalmente */
 	gap: 20px; /* Espaçamento horizontal entre as colunas */
+}
+
+.text-muted {
+	font-size: 0.9rem;
+	color: #6c757d;
 }
