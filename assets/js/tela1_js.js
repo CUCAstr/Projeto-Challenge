@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.querySelector(".login-form");
+  const visitanteBtn = document.querySelector(".guest-btn");
   const email = document.getElementById("email");
   const senha = document.getElementById("senha");
 
