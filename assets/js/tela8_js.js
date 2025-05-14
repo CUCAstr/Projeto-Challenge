@@ -125,3 +125,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Opcional: Desabilitar a câmera ao sair da página para liberar recursos ---
     window.addEventListener('beforeunload', disableCamera);
 });
+
+document.querySelector('.signature-button').addEventListener('click', () => {
+    alert('Documento assinado com sucesso!');
+    window.location.href = 'ultimatela.html'; // Substitua pelo caminho correto da sua página
+});
